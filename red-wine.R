@@ -6,12 +6,14 @@
 if (!require("rpart")) install.packages("pacman")
 if (!require("corrplot")) install.packages("corrplot")
 if (!require("dplyr")) install.packages("dplyr")
-if (!require("caret")) install.packages("caret")
+if (!require("caret")) install.packages("caret", dependencies = TRUE)
 if (!require("ggplot2")) install.packages("ggplot2")
 if (!require("rpart.plot")) install.packages("rpart.plot")
 if (!require("corrplot")) install.packages("corrplot")
 if (!require("pROC")) install.packages("pROC")
 if (!require("tidyr")) install.packages("tidyr")
+if (!require("e1071")) install.packages('e1071', dependencies=TRUE)
+if (!require("randomForest")) install.packages("randomForest")
 
 
 library(dplyr)
@@ -22,6 +24,8 @@ library(ggplot2)
 library(corrplot)
 library(pROC)
 library(tidyr)
+library(e1071)
+library(randomForest)
 
 # Import libraries and seed
 
